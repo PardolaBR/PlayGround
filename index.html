@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#090b16" />
+  <title>NEON RIFT — Anime Arena</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <canvas id="arena" aria-label="Neon Rift anime fighting game"></canvas>
+    <div class="vignette"></div>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Neon Rift home"><span class="brand-mark">裂</span><span>NEON <b>RIFT</b><small>CHAMPIONSHIP // 01</small></span></a>
+      <div class="match-info"><span>RANKED MATCH</span><strong>DOJO OF THE LAST SUN</strong></div>
+      <button class="sound-button" id="soundBtn" aria-label="Toggle sound">♫ <span>SOUND ON</span></button>
+    </header>
+    <section class="hud" aria-label="Match status">
+      <div class="fighter-card player-card">
+        <div class="fighter-name"><span class="level">01</span><span>AKIRA <small>THE STARBORN</small></span><i>✦</i></div>
+        <div class="health-track"><div id="playerHealth" class="health-fill player-health"></div><span>VITALITY</span></div>
+        <div class="energy-track"><div id="playerEnergy" class="energy-fill"></div><span>SPIRIT</span></div>
+      </div>
+      <div class="round-center"><span class="round-label">ROUND <b id="roundNumber">01</b></span><div class="timer" id="timer">99</div><div class="round-dots"><i class="won"></i><i></i><i></i></div></div>
+      <div class="fighter-card enemy-card">
+        <div class="fighter-name"><i>✦</i><span>KAITO <small>THE VOID WALKER</small></span><span class="level">02</span></div>
+        <div class="health-track"><div id="enemyHealth" class="health-fill enemy-health"></div><span>VITALITY</span></div>
+        <div class="energy-track"><div id="enemyEnergy" class="energy-fill enemy-energy"></div><span>SPIRIT</span></div>
+      </div>
+    </section>
+    <div class="combo" id="combo"><strong id="comboCount">0</strong><span>HIT<br>COMBO</span></div>
+    <div class="center-message" id="centerMessage"><span class="eyebrow">A NEW CHALLENGER APPROACHES</span><h1>FIGHT!</h1><p>THE RIFT IS YOURS TO CONQUER</p><button id="startBtn">ENTER THE ARENA <span>↗</span></button></div>
+    <div class="toast" id="toast"></div>
+    <div class="bottom-ui"><div class="objective"><span class="live-dot"></span> <span id="statusText">DEFEAT KAITO TO CLAIM THE RIFT</span></div><div class="controls-hint"><kbd>W A S D</kbd> MOVE <kbd>J</kbd> STRIKE <kbd>K</kbd> HEAVY <kbd>L</kbd> SPECIAL <kbd>⇧</kbd> DASH</div></div>
+    <div class="mobile-controls" aria-label="Touch controls">
+      <div class="dpad"><button data-action="up">▲</button><button data-action="left">◀</button><button data-action="down">▼</button><button data-action="right">▶</button></div>
+      <div class="action-pad"><button data-action="block" class="block-action">GUARD</button><button data-action="dash" class="dash-action">DASH</button><button data-action="light" class="light-action">J<span>STRIKE</span></button><button data-action="heavy" class="heavy-action">K<span>HEAVY</span></button><button data-action="special" class="special-action">L<span>RIFT</span></button></div>
+    </div>
+    <div class="pause-badge" id="pauseBadge">Ⅱ</div>
+    <div class="scanlines"></div>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

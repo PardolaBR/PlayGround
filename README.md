@@ -1,18 +1,27 @@
-# PlayGround
+# NEON RIFT — Anime Arena
 
-<!-- omgithub:readme:start -->
-## 🚀 Build, play, and remix with OMGithub
+A complete, arcade-style anime arena fighter built with vanilla HTML, CSS, and Canvas. No build step or dependencies required.
 
-**Created using [OMGithub.com](https://omgithub.com).**
+## Play
 
-[![OMGithub](https://img.shields.io/badge/OMGithub-Open%20project-orange?style=for-the-badge)](https://omgithub.com/PardolaBR/PlayGround)
-[![GitHub](https://img.shields.io/badge/GitHub-Source-181717?logo=github&style=for-the-badge)](https://github.com/PardolaBR/PlayGround)
+Open `index.html` in a modern browser, or serve this folder locally:
 
-- 🎮 [Open the project](https://omgithub.com/PardolaBR/PlayGround).
-- ✨ [Remix this project](https://omgithub.com/?remix=PardolaBR%2FPlayGround).
-- 💻 [Explore the source](https://github.com/PardolaBR/PlayGround).
-- 🛠️ [Check build runs](https://github.com/PardolaBR/PlayGround/actions).
-- 🐛 [Report an issue](https://github.com/PardolaBR/PlayGround/issues).
-- 👤 [Explore the creator's projects](https://omgithub.com/PardolaBR).
-- 🌍 [Create with OMGithub](https://omgithub.com).
-<!-- omgithub:readme:end -->
+```sh
+python3 -m http.server 3002
+```
+
+Then visit [http://localhost:3002](http://localhost:3002).
+
+Click **Enter the Arena** to begin. Defeat Kaito before the 99-second timer expires.
+
+### Controls
+
+- **WASD** — move around the arena
+- **J** — quick strike
+- **K** — heavy strike
+- **L** — spirit/rift attack (uses spirit energy)
+- **Shift** — dash (uses spirit energy)
+- **Space** — guard
+- **P / Esc** — pause
+
+Touch controls appear on phones and tablets. Sound effects are synthesized in-browser and can be muted with the sound button.
